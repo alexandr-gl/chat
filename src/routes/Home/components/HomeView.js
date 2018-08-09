@@ -2,11 +2,19 @@ import React from 'react'
 import DuckImage from '../assets/Duck.jpg'
 import './HomeView.scss'
 
-export const HomeView = () => (
-  <div>
-    <h4>Welcome!</h4>
-    <img alt='This is a duck, because Redux!' className='duck' src={DuckImage} />
-  </div>
-)
+class HomeView extends React.Component {
+  render() {
+    return (
+      <div className='login-form-container'>
+        <form className='login-form'>
+          <input className='login-form__input' type="text" placeholder="Login" />
+          <input className='login-form__input' type="password" placeholder="Password" />
+          <input className='login-form__input login-form__input-btn' type="submit" value="Login"/>
+          <input className='login-form__input login-form__input-btn signup' type="button" value="Sign up"/>
+        </form>
+      </div>
+    );
+  }
+}
 
 export default HomeView

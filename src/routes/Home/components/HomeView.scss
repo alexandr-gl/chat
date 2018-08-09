@@ -1,5 +1,38 @@
-.duck {
-  display: block;
-  width: 120px;
-  margin: 1.5rem auto;
+.login-form-container {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid #fafafa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 10px 6px 23px -1px rgba(153,153,153,1);
+  -moz-box-shadow: 10px 6px 23px -1px rgba(153,153,153,1);
+  box-shadow: 10px 6px 23px -1px rgba(153,153,153,1);
+  background-color: white;
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    .login-form__input {
+      margin-bottom: 20px;
+      height: 40px;
+    }
+
+    .login-form__input-btn {
+      background-color: #00cd6f;
+      border: none;
+      border-radius: 2px;
+      height: 40px;
+      color: white;
+    }
+    .signup {
+      margin-bottom: 0px;
+      background-color: cornflowerblue;
+    }
+  }
 }
+
